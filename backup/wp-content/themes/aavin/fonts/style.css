@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: 'Kalinga';
+  src: url('Kalinga.eot?#iefix') format('embedded-opentype'),  url('Kalinga.woff') format('woff'), url('Kalinga.ttf')  format('truetype'), url('Kalinga.svg#Kalinga') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Trajan Pro';
+	src: url('TrajanPro-Regular.eot');
+	src: url('TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('TrajanPro-Regular.woff2') format('woff2'),
+		url('TrajanPro-Regular.woff') format('woff'),
+		url('TrajanPro-Regular.ttf') format('truetype'),
+		url('TrajanPro-Regular.svg#TrajanPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('SegoeUI.eot');
+	src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('SegoeUI.woff2') format('woff2'),
+		url('SegoeUI.woff') format('woff'),
+		url('SegoeUI.ttf') format('truetype'),
+		url('SegoeUI.svg#SegoeUI') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Brown;Brittany
+FN:Brittany Brown
+ORG:AAVIN Private Equity
+TITLE:Senior Associate
+TEL;WORK;VOICE:(563) 920-8959
+ADR;WORK:;;1245 First Avenue SE;Cedar Rapids;IA;52402
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:1245 First Avenue SE=0D=0A=
+Cedar Rapids, IA  52402
+X-MS-OL-DEFAULT-POSTAL-ADDRESS:0
+URL;WORK:https://www.aavin.com
+EMAIL;PREF;INTERNET:bbrown@aavin.com
+X-MS-OL-DESIGN;CHARSET=utf-8:<card xmlns="http://schemas.microsoft.com/office/outlook/12/electronicbusinesscards" ver="1.0" layout="left" bgcolor="ffffff"><img xmlns="" align="fit" area="16" use="cardpicture"/><fld xmlns="" prop="name" align="left" dir="ltr" style="b" color="000000" size="10"/><fld xmlns="" prop="org" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="title" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="telwork" align="left" dir="ltr" color="d48d2a" size="8"><label align="right" color="626262">Work</label></fld><fld xmlns="" prop="email" align="left" dir="ltr" color="d48d2a" size="8"/><fld xmlns="" prop="addrwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="webwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/></card>
+REV:20220731T194623Z
+END:VCARD

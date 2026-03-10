@@ -1,0 +1,109 @@
+.deletebt{ float:left; background-image: url("images/delete.png") }
+.upload_documents{background: #fafafa; border: 1px solid #e5e5e5; padding: 30px; margin: 30px auto; max-width: 350px;}
+.doc-search-box{margin-bottom: 10px; padding-bottom:10px;}
+.fullfilepath{display:block;}
+.uploaddoc{display:none;}
+.doc-modify-button a { margin: 10px 0; display: inline-block; text-decoration: none; padding: 5px; }
+.directory-delete{ margin: 0 20px;}
+form.upload {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 26px 24px 46px;
+}
+form.upload p {
+    line-height: 1.5;
+}
+form.upload label {
+    color: #72777c;
+    font-size: 14px;
+}
+
+#upload-doc input[type="text"],select {width: 100%}
+
+#change_per .olduserids{display:none;}
+.message, #success{color: #0073aa;}
+.error{color: #a00;}
+
+/* progress bar */
+#progress-wrp {
+    border: 1px solid #0099CC;
+    padding: 1px;
+    position: relative;
+    border-radius: 3px;
+    margin: 10px;
+    text-align: left;
+    background: #dadada;
+    box-shadow: inset 1px 3px 6px rgba(0, 0, 0, 0.12);
+    color: #0099CC;
+    display: none;
+}
+#progress-wrp .progress-bar{
+	height: 20px;
+    border-radius: 3px;
+    background-color: #0073aa;
+    width: 0;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.11);
+}
+#progress-wrp .status{
+	top:3px;
+	left:50%;
+	position:absolute;
+	display:inline-block;
+	color: #fff;
+}
+.fol-doc-list{
+    display:none;
+}
+.mycrousal td{font-size: 14px; text-transform: capitalize; }
+
+#dsearch_form select, #dsearch_form input[type="text"]{
+    float: left;
+    margin-right: 6px;
+    max-width: 200px;
+}
+/* #frontend-doc-listing, #frontend-folder-listing{border:none;} */
+#front_end_dsearch_form{width: 100%}
+#front_end_dsearch_form select, #front_end_dsearch_form input[type="text"]{width: 20%; margin-right: 10px;}
+
+/* Table Styling */
+table.folder-doc-listing {
+    border: none;
+    box-shadow: 2px 3px 3px #dddddd;
+}
+table.folder-doc-listing th, 
+table.folder-doc-listing td {
+    border: none;
+}
+table.folder-doc-listing > thead {
+    background-color: #f5f5f5;
+}
+table.folder-doc-listing > thead > tr > th {
+    border-bottom: 1px solid #dddddd;
+}
+table.folder-doc-listing > tbody > tr:nth-child(even) > td {
+    /*background-color: #f5f5f5;*/
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+table.folder-doc-listing > tbody > tr:nth-child(even):last-child > td {
+    border-bottom: none;
+}
+table.folder-doc-listing > tbody > tr > td a {
+    color: #484848;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+
+.folder-doc-listing thead th {font-weight: 300}
+#frontend-folder-listing tr.mycrousal td{  background: rgb(35,40,45); font-size: 16px; font-weight: 500; color: #fff;}
+
+.inner-page ul.nav-tabs li {
+    width: 20%;
+}
+.tab-content .tab-pane {
+    padding: 25px 0px;
+    margin: 25px 0px;
+}

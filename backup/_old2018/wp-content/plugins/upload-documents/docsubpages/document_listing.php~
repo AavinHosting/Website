@@ -1,0 +1,61 @@
+<?php
+global $wpdb;
+$documents = $wpdb->get_results( 
+	"SELECT * FROM `wp_documents`"
+);
+
+if($_GET['did']):
+	$did = $_GET['did'];
+	$dDoc = $wpdb->get_row( 
+	"SELECT * FROM `wp_documents`
+	WHERE id = $did"
+	);
+	$uploads = wp_upload_dir();
+	$Full_upload_file_path = $uploads['basedir'].$dDoc->document_url;
+	
+    $myArray = explode('/', $dDoc->document_url);
+    $docParentFolder = $myArray[2];
+	$docParentFolderpath = $uploads['basedir'].'/documents/'.$docParentFolder;
+	if (file_exists($docParentFolderpath)) :	
+			$filecount = count(glob($docParentFolderpath . "*"));
+			if($filecount == 1): rmdir($docParentFolderpath); else: unlink($Full_upload_file_path); endif;
+	endif;
+	
+	$wpdb->delete( 'wp_documents', array( 'id' => $did ) );
+	$wpdb->delete( 'wp_user_documents', array( 'docid' => $did ) );
+
+elseif($_GET['eid']):
+	//include 'update_document.php';
+else:
+?>
+<div class="wrap">
+<h1>Document Listing</h1>
+<table class="wp-list-table widefat fixed striped">
+	<thead>
+        <tr>
+            <th scope="id" >ID</th><th scope="title" >TITLE</th><th scope="delete" >DELETE</th><th scope="edit" >EDIT</th>	
+        </tr>
+	</thead>
+	<tbody id="the-list">
+    	<?php
+        if(isset($documents) AND !empty($documents)){
+        	foreach($documents as $document){
+		echo '<tr>';
+				echo '<th scope="row">'.$document->id.'</th>';
+				echo '<td class="title column-title directory-title" data-colname="Title">'.$document->document_title.'</td>';
+				echo '<td class="directory-delete"><a href="'.admin_url().'admin.php?page=documents&did='.$document->id.'">DELETE</a></td>';
+				echo '<td class="directory-edit"><a href="'.admin_url().'admin.php?page=documents&eid='.$document->id.'">EDIT</a></td>';
+         echo '</tr>';
+            }
+         } 
+		 ?>       
+	</tbody>
+	<tfoot>
+		<tr>
+            <th scope="id" >ID</th><th scope="title" >TITLE</th><th scope="delete" >DELETE</th><th scope="edit" >EDIT</th>	
+        </tr>
+	</tfoot>
+</table>
+</div>
+<?php
+endif;
